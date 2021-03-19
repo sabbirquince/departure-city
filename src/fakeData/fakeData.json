@@ -1,0 +1,22 @@
+[
+  {
+    "index": 1,
+    "picture": "https://img2.pngio.com/motorcycle-accessories-car-cruiser-exhaust-system-chopper-e-bike-chopper-bike-png-910_700.png",
+    "name": "Bike"
+  },
+  {
+    "index": 2,
+    "picture": "https://banner2.cleanpng.com/20171201/9fb/mercedes-car-png-image-5a21734ba7f7d0.482684621512141643688.jpg",
+    "name": "Car"
+  },
+  {
+    "index": 3,
+    "picture": "https://toppng.com/uploads/preview/bus-png-11552939153mcuifpdzqn.png",
+    "name": "Bus"
+  },
+  {
+    "index": 4,
+    "picture": "https://i.pinimg.com/originals/d5/f5/05/d5f505d2b2f76929a84c35ef39a151f1.png",
+    "name": "Train"
+  }
+]

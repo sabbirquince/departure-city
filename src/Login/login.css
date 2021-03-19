@@ -1,0 +1,27 @@
+.login {
+    margin-top: 5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 2rem;
+}
+
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 1rem;
+}
+
+.login-form-field:focus {
+    outline: none;
+}
+
+#login-check {
+    padding: 1rem;
+    margin-left: .5rem;
+}

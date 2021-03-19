@@ -12,7 +12,7 @@ const HeaderCard = (props) => {
 
   return (
     <div className="col-12 col-lg-3">
-      <div className="header-img-box bg-secondary">
+      <div className="header-img-box bg-info">
         <div onClick={handleRoute}>
           <img className="header-img" src={picture} alt="" />
         </div>

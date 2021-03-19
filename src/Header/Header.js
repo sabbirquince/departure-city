@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <div className="row">
           {vehicleData.map((eachData) => (
-            <HeaderCard eachData={eachData}></HeaderCard>
+            <HeaderCard key={eachData.index} eachData={eachData}></HeaderCard>
           ))}
         </div>
       </div>

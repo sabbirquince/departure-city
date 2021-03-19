@@ -8,13 +8,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <Navbar
-        variant="dark"
-        fixed="top"
-        className="px-5"
-        bg="secondary"
-        expand="lg"
-      >
+      <Navbar variant="dark" fixed="top" className="px-5" bg="info" expand="lg">
         <Navbar.Brand href="/">Destination City</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -37,7 +31,7 @@ const Navigation = () => {
                 Login
               </Link>
             ) : (
-              <Link className="px-4 py-3 nav-link text-info font-weight-bold">
+              <Link className="px-4 py-3 nav-link text-dark font-weight-bold">
                 {loggedIn?.displayName}
               </Link>
             )}

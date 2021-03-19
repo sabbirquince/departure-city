@@ -3,24 +3,28 @@
     "index": 1,
     "picture": "https://lh3.googleusercontent.com/proxy/RqV9j2N7U_d2-tKITUFuPX7upwlDevooAiZkJV1fP8WnuKVk9kSA3Wdffghs2HNcRx6gcDVjW3CQCKFhL6hjj009lUWH2y5Jt35O_YLb2ZPtxMnXAWA9idHcqW9SrH6HoPlIyDnJWoVXSDCRvBNsd_luC-LedRCqAHZD75Be3m0mfoU0QaA",
     "name": "Bike",
-    "users": 8
+    "users": 8,
+    "price": "$19"
   },
   {
     "index": 2,
     "picture": "https://images.vexels.com/media/users/3/127817/isolated/preview/4fd0c9dcae60a9a63579b9b6853eeb09-glossy-retro-beetle-car-by-vexels.png",
     "name": "Car",
-    "users": 4
+    "users": 4,
+    "price": "$23"
   },
   {
     "index": 3,
     "picture": "https://freepikpsd.com/wp-content/uploads/2020/04/bus-transport-logo-png-2-Images-Free-Transparent.png",
     "name": "Bus",
-    "users": 13
+    "users": 13,
+    "price": "$7"
   },
   {
     "index": 4,
     "picture": "https://cdn.pixabay.com/photo/2017/02/01/10/56/berlin-2029629__340.png",
     "name": "Train",
-    "users": 6
+    "users": 6,
+    "price": "$8"
   }
 ]

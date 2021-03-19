@@ -1,0 +1,16 @@
+.header {
+    background-image: url(../images/urban-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:992px) {
+    .header {
+        padding-top: 5.5rem;
+    }
+}

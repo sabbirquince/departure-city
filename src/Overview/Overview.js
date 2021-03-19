@@ -25,7 +25,7 @@ const Overview = (props) => {
         <h6>
           <FontAwesomeIcon icon={faUsers} /> {vehicleData.users}
         </h6>
-        <h6>bike</h6>
+        <h6>{vehicleData.price}</h6>
       </div>
 
       <div className="overview-result bg-white">
@@ -34,7 +34,7 @@ const Overview = (props) => {
         <h6>
           <FontAwesomeIcon icon={faUsers} /> {vehicleData.users}
         </h6>
-        <h6>bike</h6>
+        <h6>{vehicleData.price}</h6>
       </div>
 
       <div className="overview-result bg-white">
@@ -43,7 +43,7 @@ const Overview = (props) => {
         <h6>
           <FontAwesomeIcon icon={faUsers} /> {vehicleData.users}
         </h6>
-        <h6>bike</h6>
+        <h6>{vehicleData.price}</h6>
       </div>
     </div>
   );

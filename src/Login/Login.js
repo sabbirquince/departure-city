@@ -197,17 +197,22 @@ const Login = () => {
         </div>
       </form>
 
-      <div className="text-center p-4">
-        {/* ////////////////// social login buttons//////////////////  */}
-
-        <button onClick={handleFacebook} className="btn btn-outline-info">
+      {/* ////////////////// social login buttons//////////////////  */}
+      <div className="text-center social-box p-4">
+        <button
+          onClick={handleFacebook}
+          className="btn btn-outline-info btn-block"
+        >
           <span className="pr-2">
             <FontAwesomeIcon icon={faFacebookF} />
           </span>
           Continue with Facebook
         </button>
 
-        <button onClick={handleGoogle} className="btn btn-outline-info ml-2">
+        <button
+          onClick={handleGoogle}
+          className="btn btn-outline-info btn-block"
+        >
           <span className="pr-2">
             <FontAwesomeIcon icon={faGoogle} />
           </span>

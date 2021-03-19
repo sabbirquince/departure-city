@@ -12,7 +12,7 @@ import Overview from "./Overview/Overview";
 export const LoginContext = createContext();
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState({});
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <LoginContext.Provider value={[loggedIn, setLoggedIn]}>

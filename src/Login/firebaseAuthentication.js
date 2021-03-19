@@ -44,7 +44,6 @@ export const signInWithGoogle = () => {
     .auth()
     .signInWithPopup(GoogleProvider)
     .then((result) => {
-      const credential = result.credential;
       const user = result.user;
       return user;
     });
@@ -57,11 +56,7 @@ export const signInWithFacebook = () => {
     .auth()
     .signInWithPopup(fbProvider)
     .then((result) => {
-      const credential = result.credential;
       const user = result.user;
       return user;
-    })
-    .catch((error) => {
-      const errorMessage = error.message;
     });
 };

@@ -21,7 +21,22 @@
     outline: none;
 }
 
+.social-box {
+    width: 35%;
+    margin: 0 auto;
+}
+
 #login-check {
     padding: 1rem;
     margin-left: .5rem;
+}
+
+@media only screen and (max-width:992px) {
+    .login-form {
+        width: 80%;
+    }
+
+    .social-box {
+        width: 80%;
+    }
 }

@@ -4,6 +4,7 @@ import fakeData from "../fakeData/fakeData.json";
 import "./setDestination.css";
 import DestinationForm from "../DestinationForm/DestinationForm";
 import Overview from "../Overview/Overview";
+import MapComponent from "../Map/Map";
 
 const SetDestination = () => {
   let { vehicle } = useParams();
@@ -45,7 +46,9 @@ const SetDestination = () => {
           )}
         </section>
 
-        <section className="destination-map col-md-9"></section>
+        <section className="destination-map col-md-9">
+          <MapComponent />
+        </section>
       </div>
     </div>
   );

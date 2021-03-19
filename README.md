@@ -10,4 +10,6 @@
 
 #### 3: User's name shows up on navigation bar if logged in.
 
-#### 4: Coded Google Map with api key, did everything right according to google map documentation, it doesn't appear on page.
+#### 4: Has sign up and sign in validation.
+
+#### 5: Coded Google Map with api key, did everything right according to google map documentation, it doesn't appear on page.

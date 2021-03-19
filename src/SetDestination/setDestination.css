@@ -1,0 +1,29 @@
+.destination {
+    margin-top: 5rem;
+}
+
+
+.destination-form,
+.overview {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.overview div {
+    border-radius: 6px;
+}
+
+.overview-result {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding: .75rem;
+    height: 4.5rem;
+}
+
+.destination-img {
+    height: 3.25rem;
+}

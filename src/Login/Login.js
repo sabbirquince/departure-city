@@ -10,7 +10,6 @@ import {
 } from "./firebaseAuthentication";
 import "./login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 
 const Login = () => {
@@ -199,7 +198,7 @@ const Login = () => {
       </form>
 
       <div className="text-center p-4">
-        {/* // social buttons  */}
+        {/* ////////////////// social login buttons//////////////////  */}
 
         <button onClick={handleFacebook} className="btn btn-outline-info">
           <span className="pr-2">
@@ -216,7 +215,7 @@ const Login = () => {
         </button>
       </div>
 
-      {/* error or successful message  */}
+      {/* //////////////////// error or successful message /////////////////// */}
 
       {loggedIn?.email && newUser && (
         <p className="text-center text-success p-4">Sign up successful</p>

@@ -35,12 +35,20 @@ const Login = () => {
     if (newUser && isEmailValid && isPasswordValid) {
       const { name, email, password } = data;
 
-      createUser(name, email, password).then((newUser) => {
-        setLoggedIn(newUser);
-        setTimeout(() => {
-          history.replace(from);
-        }, 1500);
-      });
+      createUser(name, email, password)
+        .then((newUser) => {
+          setLoggedIn(newUser);
+          setTimeout(() => {
+            history.replace(from);
+          }, 1500);
+        })
+        .catch((error) => {
+          const message = error.message;
+          const user = {
+            message: message,
+          };
+          setLoggedIn(user);
+        });
     }
 
     if (!newUser) {
@@ -212,20 +220,14 @@ const Login = () => {
 
       {/* ////////////////// social login buttons//////////////////  */}
       <div className="text-center social-box p-4">
-        <button
-          onClick={handleFacebook}
-          className="btn btn-outline-info btn-block"
-        >
+        <button onClick={handleFacebook} className="btn btn-info btn-block">
           <span className="pr-2">
             <FontAwesomeIcon icon={faFacebookF} />
           </span>
           Continue with Facebook
         </button>
 
-        <button
-          onClick={handleGoogle}
-          className="btn btn-outline-info btn-block"
-        >
+        <button onClick={handleGoogle} className="btn btn-info btn-block">
           <span className="pr-2">
             <FontAwesomeIcon icon={faGoogle} />
           </span>
@@ -244,9 +246,7 @@ const Login = () => {
       )}
 
       {loggedIn?.message && (
-        <p className="text-center text-danger p-4">
-          Either email or password is wrong. Try again!
-        </p>
+        <p className="text-center text-danger">{loggedIn.message}</p>
       )}
     </div>
   );

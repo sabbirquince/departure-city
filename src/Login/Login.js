@@ -238,7 +238,7 @@ const Login = () => {
       {/* //////////////////// error or successful message /////////////////// */}
 
       {loggedIn?.email && newUser && (
-        <p className="text-center text-success p-4">Sign up successful</p>
+        <p className="text-center text-success p-4">Sign in successful</p>
       )}
 
       {loggedIn?.email && !newUser && (

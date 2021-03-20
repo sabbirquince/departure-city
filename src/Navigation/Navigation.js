@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <div>
       <Navbar variant="dark" fixed="top" className="px-5" bg="info" expand="lg">
-        <Navbar.Brand href="/">Destination City</Navbar.Brand>
+        <Navbar.Brand href="/">Departure City</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">

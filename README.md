@@ -1,6 +1,6 @@
 ## Live: https://departure-city.web.app
 
-## Project: Destination City
+## Project: Departure City
 
 ### Features =>
 
@@ -12,4 +12,4 @@
 
 #### 4: Has sign up and sign in validation.
 
-#### 5: Coded Google Map with unique api key (that was originated by my google cloud console), did everything right according to google map documentation (and some youtube video), appear on page but with some problems.
+#### 5: Coded Google Map with unique api key (that was originated by my google cloud console), did everything right according to google map documentation (and some youtube video), map appears on page but with some problems.

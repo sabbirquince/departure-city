@@ -9,6 +9,7 @@
     flex-direction: column;
     border-radius: 6px;
     margin-bottom: 2rem;
+    border: 1px solid lightgrey;
 }
 
 .overview div {
@@ -26,4 +27,11 @@
 
 .destination-img {
     height: 2.5rem;
+}
+
+.destination-map {
+    height: 37.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
 }

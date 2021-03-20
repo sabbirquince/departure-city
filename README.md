@@ -12,4 +12,4 @@
 
 #### 4: Has sign up and sign in validation.
 
-#### 5: Coded Google Map with api key, did everything right according to google map documentation, it doesn't appear on page.
+#### 5: Coded Google Map with unique api key (that was originated by my google cloud console), did everything right according to google map documentation (and some youtube video), appear on page but with some problems.

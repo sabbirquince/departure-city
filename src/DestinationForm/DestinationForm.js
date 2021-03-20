@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import "./destinationForm.css";
 
 const DestinationForm = (props) => {
   const { setDestinationData, showOverview, setShowOverview } = props;

@@ -2,3 +2,17 @@
     outline: none;
     border: none;
 }
+
+.login-btn {
+    background-color: rgb(129, 187, 53);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem !important;
+    transition: all .2s;
+}
+
+.login-btn:hover {
+    background-color: rgb(170, 214, 98);
+}

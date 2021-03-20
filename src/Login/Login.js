@@ -183,17 +183,30 @@ const Login = () => {
           <span className="ml-4 text-danger">Password doesn't match!</span>
         )}
         <input className="btn btn-outline-info m-4" type="submit" />
-        <div className="d-flex">
-          <p className="ml-4">Already have an account?</p>
-          <label className="mx-2" htmlFor="login-check">
-            login
-            <input
-              onChange={() => setNewUser(!newUser)}
-              type="checkbox"
-              name="login-check"
-              id="login-check"
-            />
-          </label>
+
+        <div className="d-flex justify-content-center">
+          {newUser ? (
+            <p className="ml-4">Already have an account?</p>
+          ) : (
+            <p className="ml-4">Create an account</p>
+          )}
+
+          {newUser ? (
+            <label className="ml-1 text-info" htmlFor="login-check">
+              Login
+            </label>
+          ) : (
+            <label className="ml-1 text-info" htmlFor="login-check">
+              Sign up
+            </label>
+          )}
+          <input
+            onChange={() => setNewUser(!newUser)}
+            type="checkbox"
+            name="login-check"
+            id="login-check"
+            className="d-none"
+          />
         </div>
       </form>
 

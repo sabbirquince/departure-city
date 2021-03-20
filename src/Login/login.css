@@ -7,13 +7,13 @@
     flex-direction: column;
     width: 35%;
     margin: 0 auto;
-    border: 1px solid grey;
+    border: 1.5px solid lightgrey;
     padding: 2rem;
 }
 
 .login-form-field {
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
     margin: 1rem;
 }
 
@@ -29,6 +29,10 @@
 #login-check {
     padding: 1rem;
     margin-left: .5rem;
+}
+
+.login label {
+    cursor: pointer;
 }
 
 @media only screen and (max-width:992px) {

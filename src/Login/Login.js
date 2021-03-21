@@ -131,9 +131,9 @@ const Login = () => {
     <div className="login">
       <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
         {newUser ? (
-          <h3 className="text-center">Create an account</h3>
+          <h3 className="text-center mb-4">Create an account</h3>
         ) : (
-          <h3 className="text-center">Login</h3>
+          <h3 className="text-center mb-4">Login</h3>
         )}
 
         {newUser && (
@@ -238,11 +238,11 @@ const Login = () => {
       {/* //////////////////// error or successful message /////////////////// */}
 
       {loggedIn?.email && newUser && (
-        <p className="text-center text-success p-4">Sign in successful</p>
+        <p className="text-center text-success p-1">Sign in successful</p>
       )}
 
       {loggedIn?.email && !newUser && (
-        <p className="text-center text-success p-4">Login successful</p>
+        <p className="text-center text-success p-1">Login successful</p>
       )}
 
       {loggedIn?.message && (

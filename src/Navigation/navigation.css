@@ -3,6 +3,12 @@
     border: none;
 }
 
+.logo {
+    height: 2rem;
+    margin-right: .6rem;
+    margin-left: 2rem;
+}
+
 .login-btn {
     background-color: rgb(129, 187, 53);
     border-radius: 3px;

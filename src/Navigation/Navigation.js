@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { LoginContext } from "../App";
 import "./navigation.css";
+import logo from "../images/logo.png";
 
 const Navigation = () => {
   const [loggedIn, setLoggedIn] = useContext(LoginContext);
@@ -11,7 +12,10 @@ const Navigation = () => {
   return (
     <div>
       <Navbar variant="dark" fixed="top" className="px-5" bg="info" expand="lg">
-        <Navbar.Brand href="/">Departure City</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img className="logo" src={logo} alt="" />
+          Departure City
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">

@@ -5,7 +5,7 @@
 .login-form {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 27.5%;
     margin: 0 auto;
     border: 1.5px solid lightgrey;
     padding: 1.25rem;
@@ -13,7 +13,7 @@
 
 .login-form-field {
     border: none;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: .5px solid lightgrey;
     margin: 1rem;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .social-box {
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
 }
 

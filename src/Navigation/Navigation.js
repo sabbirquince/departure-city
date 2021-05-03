@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { LoginContext } from "../App";
@@ -8,6 +8,17 @@ import logo from "../images/logo.png";
 const Navigation = () => {
   const [loggedIn, setLoggedIn] = useContext(LoginContext);
   const vehicleDefault = "Bike";
+
+  const [activeClass, setActiveClass] = useState({
+    key: null,
+    index: [0, 1, 2, 3, 4],
+  });
+
+  const setActive = (index) => {
+    const newAct = { ...activeClass };
+    newAct.key = index;
+    setActiveClass(newAct);
+  };
 
   return (
     <div>
@@ -19,19 +30,48 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Link className="px-3 text-light py-3 nav-link" to="/home">
+            <Link
+              className={
+                activeClass.key === 0
+                  ? "px-3 active py-3 nav-link"
+                  : "px-3 text-light py-3 nav-link"
+              }
+              onClick={() => setActive(activeClass.index[0])}
+              to="/home"
+            >
               Home
             </Link>
             <Link
-              className="px-3 text-light py-3 nav-link"
+              className={
+                activeClass.key === 1
+                  ? "px-3 active py-3 nav-link"
+                  : "px-3 text-light py-3 nav-link"
+              }
+              onClick={() => setActive(activeClass.index[1])}
               to={`/vehicle/${vehicleDefault}`}
             >
               Destination
             </Link>
-            <Link className="px-3 text-light py-3 nav-link" to="#home">
+            <Link
+              className={
+                activeClass.key === 2
+                  ? "px-3 active py-3 nav-link"
+                  : "px-3 text-light py-3 nav-link"
+              }
+              onClick={() => setActive(activeClass.index[2])}
+              to="#home"
+            >
               Blog
             </Link>
-            <Link className="px-3 text-light py-3 nav-link" to="#link">
+            <Link
+              className={
+                activeClass.key === 3
+                  ? "px-3 active py-3 nav-link"
+                  : "px-3 text-light py-3 nav-link"
+              }
+              onClick={() => setActive(activeClass.index[3])}
+              to="#link"
+            >
               Contact
             </Link>
 

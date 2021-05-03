@@ -5,6 +5,7 @@ import "./setDestination.css";
 import DestinationForm from "../DestinationForm/DestinationForm";
 import Overview from "../Overview/Overview";
 import MapContainer from "../Map/MapContainer";
+import ReactMap from "../Map/ReactMap";
 
 const SetDestination = () => {
   let { vehicle } = useParams();
@@ -47,7 +48,7 @@ const SetDestination = () => {
         </section>
 
         <section className="destination-map col-md-9 bg-light">
-          <MapContainer />
+          <ReactMap />
         </section>
       </div>
     </div>
